@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Shobhit's ToDo App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Todo_App/css/style.css" rel="stylesheet">
+    <style>
+        body{
+            background-image: url(https://imgs.search.brave.com/cXFWTdddqsQtR_Z-ZFVNFqlTSOkRkVc-LGmd2W-z7dg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzU5L2E3/Lzk0LzU5YTc5NDk2/NjJlMzJhODdhYzY0/NmRmMWQ3NGQwNjYx/LmpwZw);
+        }
+        .todos__btn--next {
+            float: right;
+        }
+
+        .todos__btn--prev {
+            float: left;
+        }
+
+        .clearfix {
+            clear: both;
+            display: table;
+            content: '';
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="color: aliceblue; text-align: center; margin-top: 5px;">Powered By : | Shobhit Prajapati |</h2>
+        <h4 class="mt-5" style="color: aliceblue; text-align: center;">You can use my ToDo App to make shopping lists or task lists, take notes, record collections, plan an event.</h4>
+        <form class="mb-5 mt-5">
+            <div class="form-row align-items-center">
+                <div class="col-md-11 col-sm-11 col-xs-11"><input class="form-control" id="todo-input" placeholder="Enter the list items" style="background-color: rgb(172, 255, 227);"></div>
+                <div class="col-md-1 col-sm-1 col-xs-1"><button class="btn btn-primary btn-block btn-submit" style="color: aquamarine; background-color: rgb(0, 0, 0);">Add <i
+                            class="fa fa-plus"></i></button></div>
+            </div>
+            <p class="text-danger"></p>
+        </form>
+        <div class="row mb-5">
+            <div class="col-md-8 mt-3">
+                <div class="card">
+                    <div class="card-body" style="background-color: black; color: antiquewhite; border-radius: 20px;">
+                        <h4 class="card-title">Your ToDos List</h4>
+                        <!-- <p class="text-center mt-4 mb-3 act-todo d-none">You do not have any todos</p> -->
+                        <ul class="activeTodo list-group" style="color: rgb(0, 0, 0);"></ul><button class="btn btn-danger clear-all mt-3">Clear All
+                            <i class="fa fa-exclamation-triangle"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+                <div class="card">
+                    <div class="card-body del-todos">
+                        <h4 class="card-title">Recently Deleted</h4>
+                        <p class="text-center mt-4 mb-3 del-todo d-none">No deleted todos</p>
+                        <ul class="inactiveTodo list-group"></ul>
+                        <div class="buttons"></div><span class="clearfix"></span> <button
+                            class="btn btn-danger btn-block delete-all mt-3">Delete All <i
+                                class="fa fa-exclamation-triangle"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>src = "Todo_App/js/jquery.js"</script>
+    <script>src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"</script>
+    <script src="https://kit.fontawesome.com/ae5cc21294.js" crossorigin="anonymous"></script>
+    <script src="Todo_App/js/bundle.js"></script>
+</body>
+
+</html>
